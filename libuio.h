@@ -12,6 +12,10 @@
 *
 ************************************************************************/ 
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #ifndef LIBUIO_H
 #define LIBUIO_H
 
@@ -39,3 +43,7 @@ UIO * UIO_MAP(uint8_t uioNum, uint8_t mapNum);
 uint8_t UIO_UNMAP(void * blockToFree);
 
 #endif //UIO_USER_H
+
+#ifdef __cplusplus
+}
+#endif
